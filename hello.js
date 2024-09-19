@@ -7,6 +7,8 @@ app.use(express.json());
 //github webhook endpoint 
 app.post('/webhook', (req, res) => {
 
+	console.log('hhhhhh');
+
 	const payload = req.body; //data from github via webhook
 	console.log('Received webhook event:', payload);
 
